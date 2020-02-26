@@ -23,8 +23,9 @@ class Client():
         self.socket.send(bytes(self.client_name, encoding='utf-8'))  
         while True:
             try:
-                c = input(f'{self.client_name}: ')
-                self.socket.send(bytes(c, encoding='utf-8'))  
+                c = input()
+                sys.stdout.write("\x1b[1A\x1b[2K") # Delete previous line
+                self.socket.send(bytes(c, encoding='utf-8')) 
             except:
                 self.socket.close()
                 return

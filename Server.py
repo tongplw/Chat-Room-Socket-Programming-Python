@@ -1,6 +1,7 @@
 import socket
 import _thread
 import threading
+from datetime import datetime
 
 
 class Server():
@@ -29,7 +30,7 @@ class Server():
             # Declare the client's name
             client_name = connection.recv(64).decode('utf-8')
             self.users_table[connection] = client_name
-            print(f'{client_name} joined the room !!')
+            print(f'{self._get_current_time()} {client_name} joined the room !!')
 
             while True:
                 data = connection.recv(64).decode('utf-8')
@@ -38,14 +39,16 @@ class Server():
                 else:
                     return 
         except:
-            print(f'{client_name} left the room !!')
+            print(f'{self._get_current_time()} {client_name} left the room !!')
             self.users_table.pop(connection)
             connection.close()
 
+    def _get_current_time(self):
+        return datetime.now().strftime("%H:%M:%S")
+
     def multicast(self, message, owner=None):
         for conn in self.users_table:
-            if conn == owner: continue
-            data = f'{self.users_table[owner]}: {message}'
+            data = f'{self._get_current_time()} {self.users_table[owner]}: {message}'
             conn.sendall(bytes(data, encoding='utf-8'))  
 
 
