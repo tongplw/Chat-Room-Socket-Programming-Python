@@ -12,7 +12,7 @@ python Server.py
 
 2. In another terminal create a client and add to the chat room by running Client.py
 ``` python
-python Client.py
+python Client.py [name] # Don't forget to declare the client's name
 ```
 
 3. You can add more clients in the room by running more Client.py in other terminal
