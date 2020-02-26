@@ -2,7 +2,6 @@
 
 Client-Server Chat Room Implemented by Socket Programming in Python
 
-<<<<<<< HEAD
 ### Getting Started
 
 1. Open a terminal and run Server.py
@@ -16,6 +15,3 @@ python .\Server.py
 cd <root>
 python .\Client.py
 ```
-=======
-## Getting Started
->>>>>>> 1d5697b246679a31da4c2be90479ca81db171a39
