@@ -1,6 +1,8 @@
-# Chat-Room-Socket-Programming-Python
+# Client-Server Chat Room
 
-Client-Server Chat Room Implemented by Socket Programming in Python
+A chat room with one server and multiple clients. Server provides a chat room for clients
+to join. After joining the chat, the client can send message to the chat room where all chat
+messages are logged and displayed.
 
 ### Getting Started
 
@@ -21,11 +23,11 @@ python Client.py [name] # Don't forget to declare the client's name
 
 ### Demo
 
-1. First, I have created 3 terminals and run the code as following.
+1. First, create 3 terminals and run the code as following.
 
 ![3 terminals](/resources/pic1.png)
 
-2. Then, I sent messages to the chat room then everyone in the room received my messages immediately.
+2. Then, send messages from Person_A and Person_B to the chat room then everyone in the room received messages immediately.
 
 ![3 terminals](/resources/pic2.png)
 
