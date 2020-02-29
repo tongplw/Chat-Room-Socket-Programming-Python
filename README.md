@@ -1,8 +1,8 @@
 # Client-Server Chat Room
 
-A chat room with one server and multiple clients. Server provides a chat room for clients
-to join. After joining the chat, the client can send message to the chat room where all chat
-messages are logged and displayed.
+This project is a chat room with one server and multiple clients. The server provides a
+chat room for clients to join. After joining the chat, the clients can send messages to the chat
+room where all chat messages are logged and displayed.
 
 ### Getting Started
 
@@ -17,17 +17,17 @@ python Server.py
 python Client.py [name] # Don't forget to declare the client's name
 ```
 
-3. You can add more clients in the room by running more Client.py in other terminals.
+3. You can add more clients in the room by running more Client.py in more terminals.
 
-4. Let's have a chat!!!
+4. Let's have a chat!
 
 ### Demo
 
-1. First, create 3 terminals and run the code as following.
+1. First, open 3 terminals and run the code as following.
 
 ![3 terminals](/resources/pic1.png)
 
-2. Then, send messages from Person_A and Person_B to the chat room then everyone in the room received messages immediately.
+2. Send messages from Person_A and Person_B to the chat room. Everyone in the room received messages immediately.
 
 ![3 terminals](/resources/pic2.png)
 
